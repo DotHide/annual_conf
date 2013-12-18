@@ -1,0 +1,14 @@
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
+  <div class="field">
+    <%= f.label '手机号码：', class: '' %><br>
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label '真实姓名：' %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit '提交', class: 'btn btn-large btn-primary' %>
+  </div>
+<% end %>

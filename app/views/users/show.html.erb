@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>手机号码：</strong>
+  <%= @user.mobile %>
+</p>
+
+<p>
+  <strong>真实姓名：</strong>
+  <%= @user.name %>
+</p>
+
+<%= link_to '编辑', edit_user_path(@user) %>
