@@ -1,6 +1,8 @@
 AnnualConf::Application.routes.draw do
+  get "lotterys/home"
   resources :users
 
+  match 'lottery', to: 'lotterys#home', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -21,9 +21,9 @@ gem 'bootstrap-sass', '2.3.2'
 
 # 安全
 gem 'bcrypt-ruby', '~> 3.0.1'
+gem 'sqlite3', '1.3.7'
 
 group :development do
-  gem 'sqlite3', '1.3.7'
   gem 'capistrano', '2.9.0', require: false
   gem 'rvm-capistrano', require: false
   gem 'rspec-rails', '2.13.2'
@@ -36,5 +36,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'mysql2', '0.3.14'
+  gem 'unicorn'
 end

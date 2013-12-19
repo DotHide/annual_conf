@@ -8,6 +8,7 @@
     <%= f.label '真实姓名：' %><br>
     <%= f.text_field :name %>
   </div>
+  <%= f.text_field :product_type, { :type => 'hidden', :value => params[:product_type] } %>
   <div class="actions">
     <%= f.submit '提交', class: 'btn btn-large btn-primary' %>
   </div>
